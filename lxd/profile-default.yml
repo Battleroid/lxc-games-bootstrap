@@ -1,0 +1,14 @@
+package_upgrade: true
+packages:
+  - htop
+  - jq
+  - silversearcher-ag
+users:
+  - name: username
+    # ssh-authorized-keys:
+    #   - ssh-rsa mykeyhere
+    groups: sudo
+    sudo: ['ALL=(ALL:ALL) ALL']
+    shell: /bin/bash
+runcmd:
+  - apt-get purge snapd -y

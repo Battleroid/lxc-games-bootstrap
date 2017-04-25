@@ -1,0 +1,2 @@
+@daily /home/username/update_insurgency.sh backup >> /home/username/logs/backups.log
+@daily find /home/username/baks -type f -iname "*.tar.gz" -ctime +30 -delete -print > /home/username/logs/deletes.log
