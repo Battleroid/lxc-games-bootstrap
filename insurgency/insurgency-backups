@@ -1,0 +1,15 @@
+/home/username/logs/backups.log {
+    rotate 8
+    weekly
+    missingok
+    nocompress
+    create 775 username username
+}
+
+/home/username/logs/deletes.log {
+    rotate 8
+    weekly
+    missingok
+    nocompress
+    create 775 username username
+}
